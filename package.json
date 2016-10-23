@@ -1,0 +1,21 @@
+{
+  "name": "jsbelgrade-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region eu-central-1 --api-module bot --configure-telegram-bot",
+    "update": "claudia update --cache-api-config apiConfig"
+  },
+  "author": "Slobodan Stojanovic <slobodan@cloudhorizon.com> (http://slobodan.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "claudia": "^2.1.0"
+  },
+  "dependencies": {
+    "claudia-bot-builder": "^2.1.0",
+    "eslint": "^3.8.1",
+    "eslint-config-defaults": "^9.0.0",
+    "huh": "^1.1.4"
+  }
+}
