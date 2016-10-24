@@ -16,7 +16,7 @@ function mainMenu() {
     .get()
 }
 
-module.exports =  botBuilder(message => {
+const api =  botBuilder(message => {
   // Initial message
   // `/start start` is something that Telegram sends when someone click on Start button
   if (message.text === '/start' || message.text === '/start start')
@@ -62,3 +62,7 @@ module.exports =  botBuilder(message => {
     mainMenu()
   ]
 })
+
+api.addPostDeployConfig('meetupComApiKey', 'Meetup.com API Key:', 'configure-app')
+
+module.exports = api
